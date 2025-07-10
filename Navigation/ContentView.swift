@@ -13,8 +13,20 @@ struct ContentView: View {
             VStack {
                 Text("This is my root view")
                 NavigationLink(destination:
-                                Navigation2()){
-                    Text("Click me!")
+                                NavHome()){
+                    Text("Home!")
+                }
+                NavigationLink(destination:
+                                NavAbout()){
+                    Text("About")
+                }
+                NavigationLink(destination:
+                                NavContact()){
+                    Text("Contact")
+                }
+                NavigationLink(destination:
+                                NavHelp()){
+                    Text("Help")
                 }
             }
         }
